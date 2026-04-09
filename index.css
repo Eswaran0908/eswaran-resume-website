@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #dbeafe, #cbd5e1);
+    overflow: hidden;
+}
+
+/* Main Wrapper */
+.welcome-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Welcome Card */
+.welcome-card {
+    width: 100%;
+    max-width: 750px;
+    background: white;
+    text-align: center;
+    padding: 50px 30px;
+    border-radius: 24px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+    animation: fadeSlideUp 1.2s ease;
+}
+
+/* Profile Image */
+.profile-pic {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center top;
+    margin-bottom: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    animation: floatImage 3s ease-in-out infinite;
+    padding: 6px;
+    background: white;
+}
+
+/* Heading */
+h1 {
+    font-size: 2.3rem;
+    margin-bottom: 18px;
+    min-height: 60px;
+    animation: fadeText 1.8s ease;
+}
+
+/* Subtitle */
+.subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 28px;
+    color: #555;
+    animation: fadeText 2s ease;
+}
+
+/* Resume Button */
+.resume-btn {
+    padding: 14px 30px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: white;
+    background: linear-gradient(90deg, #2563eb, #1d4ed8);
+    box-shadow: 0 0 18px rgba(37, 99, 235, 0.6);
+    transition: 0.3s;
+    min-width: 180px;
+    min-height: 52px;
+    animation: pulseGlow 2s infinite;
+}
+
+.resume-btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0 0 28px rgba(37, 99, 235, 0.8);
+}
+
+/* ===== Animations ===== */
+
+/* Card Slide */
+@keyframes fadeSlideUp {
+    from {
+        opacity: 0;
+        transform: translateY(70px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Floating Profile */
+@keyframes floatImage {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+/* Text Fade */
+@keyframes fadeText {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Button Glow */
+@keyframes pulseGlow {
+    0% {
+        box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 22px rgba(37, 99, 235, 0.8);
+    }
+    100% {
+        box-shadow: 0 0 10px rgba(37, 99, 235, 0.4);
+    }
+}
+
+.social-icons {
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-icons a {
+    width: 50px;
+    height: 50px;
+    background: white;
+    color: #2563eb;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    text-decoration: none;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.12);
+    transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.social-icons a:hover {
+    transform: translateY(-6px) scale(1.08);
+    background: #2563eb;
+    color: white;
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.35);
+}

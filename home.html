@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume | ESWARAN R</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="style.css" </head>
+
+<body>
+
+    <div class="main-container">
+
+        <!-- Left Side -->
+        <aside class="left-column">
+            <div class="image-wrapper">
+                <img src="profile.jpg" alt="Profile Photo" class="profile-pic">
+            </div>
+
+            <h1>ESWARAN R</h1>
+            <h2 class="role">FULL STACK DEVELOPER</h2>
+
+            <!-- typing animation target -->
+            <div id="typing-text"></div>
+
+            <button class="download-btn" onclick="downloadResume()">
+                📄 Download My Resume
+            </button>
+
+            <button class="back-btn" onclick="goHomePage()">
+                ⬅️ Back to Welcome Page
+            </button>
+        </aside>
+
+        <!-- Right Side -->
+
+
+        <main class="right-column">
+            <nav class="navbar">
+                <a class="nav-item active" onclick="setActive(this); showContent('main')">🏠 Main</a>
+                <a class="nav-item" onclick="setActive(this); showContent('about')">👨‍💻 About</a>
+                <a class="nav-item" onclick="setActive(this); showContent('skills')">🛠 Skills</a>
+                <a class="nav-item" onclick="setActive(this); showContent('projects')">📂 Projects</a>
+                <a class="nav-item" onclick="setActive(this); showContent('education')">🎓 Education</a>
+                <a class="nav-item" onclick="setActive(this); showContent('certificate')">🏆 Certificates</a>
+                <a class="nav-item" onclick="setActive(this); showContent('contact')">📞 Contact</a>
+            </nav>
+
+            <section id="content-area">
+                <h1 id="title">✨ Explore My Resume</h1>
+
+                <div id="content">
+                    <div class="simple-banner">
+                        <img src="banner.webp" alt="Resume Banner" class="banner-img">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome | My Resume</title>
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="welcome-wrapper">
+        <div class="welcome-card">
+
+            <!-- Profile Image -->
+            <img src="profile.jpg" alt="Profile Image" class="profile-pic">
+
+            <!-- Animated Heading -->
+            <h1 id="welcomeText"></h1>
+
+            <!-- Subtitle -->
+            <p class="subtitle">
+                <br>
+                💻 Passionate Full Stack Developer
+            </p>
+
+            <!-- Animated Button -->
+            <button class="resume-btn" onclick="goToHome()" id="animatedBtn">
+                <i class="fas fa-file-alt"></i>
+            </button>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fas fa-envelope"></i></a>
+            </div>
+
+        </div>
+    </div>
+
+    <script>
+        function goToHome() {
+            window.location.href = "home.html";
+        }
+
+        const headingText =
+            "✨ Welcome to My Resume – I'm ESWARAN ✨ ";
+
+        let headingIndex = 0;
+        const heading = document.getElementById("welcomeText");
+
+        function typeHeadingText() {
+            if (headingIndex < headingText.length) {
+                heading.innerHTML += headingText.charAt(headingIndex);
+                headingIndex++;
+                setTimeout(typeHeadingText, 70);
+            }
+        }
+
+        const buttonText = " Open Resume";
+        let buttonIndex = 0;
+        const btn = document.getElementById("animatedBtn");
+
+        function typeButtonText() {
+            if (buttonIndex < buttonText.length) {
+                btn.innerHTML += buttonText.charAt(buttonIndex);
+                buttonIndex++;
+                setTimeout(typeButtonText, 100);
+            }
+        }
+
+        window.onload = function () {
+            typeHeadingText();
+            setTimeout(typeButtonText, 2500);
+        };
+    </script>
+
+</body>
+</html>
