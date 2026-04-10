@@ -411,20 +411,21 @@ body {
     }
 
     /* Project cards */
-    .project-card {
-        padding: 14px;
-        margin: 14px 0;
-    }
+   .project-card {
+    padding: 14px;
+    margin: 14px 0;
+}
 
-    .project-card h4 {
-        font-size: 16px;
-        line-height: 1.5;
-    }
+.project-card h4 {
+    font-size: 16px;
+    line-height: 1.5;
+}
 
-    .project-details {
-        font-size: 14px;
-        padding: 12px;
-    }
+.project-details {
+    font-size: 14px;
+    padding: 12px;
+}
+
 
     /* Education table scroll */
     .education-table-wrapper {
@@ -490,4 +491,19 @@ body {
 .edu-card:hover {
     transform: translateY(-3px);
     box-shadow: 0 10px 18px rgba(14, 74, 202, 0.929);
+}
+
+.profile-pic {
+    width: 250px;
+    height: 310px;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center 10%;
+    border: 5px solid #fff;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.03);
 }
