@@ -77,7 +77,7 @@ Deployed using **Netlify**
 
 ## 🌐 Live Demo
 
-👉 [View Portfolio Website](https://eswaran-resume-website.netlify.app)
+👉 [View Resume Website](https://eswaran-resume-website.netlify.app)
 
 ## 👨‍💻 Author
 
