@@ -195,7 +195,7 @@ function showContent(section) {
     else if (section === "education") {
         title.innerHTML = "🎓 Education";
         content.innerHTML = `
-            <div class="education-section">
+            <div class="education-table-wrapper">
                 <h3>📚 Academic Qualifications</h3>
 
                 <table class="education-table">

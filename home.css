@@ -324,3 +324,136 @@ body {
         padding: 18px;
     }
 }
+/* =========================
+   COMPLETE MOBILE FIX
+========================= */
+@media (max-width: 768px) {
+
+    /* Main layout stack */
+    .main-container {
+        flex-direction: column;
+    }
+
+    .left-column,
+    .right-column {
+        width: 100%;
+    }
+
+    .left-column {
+        padding: 25px 18px;
+    }
+
+    .right-column {
+        padding: 16px;
+    }
+
+    /* Profile image */
+    .profile-pic {
+        width: 160px;
+        height: 160px;
+    }
+
+    .left-column h1 {
+        font-size: 1.8rem;
+    }
+
+    .role {
+        font-size: 1rem;
+    }
+
+    /* Buttons */
+    .download-btn,
+    .back-btn {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    /* Navbar */
+    .navbar {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+        padding: 14px;
+    }
+
+    .nav-item {
+        text-align: center;
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    /* Content area */
+    #content-area {
+        padding: 16px;
+        min-height: auto;
+    }
+
+    #title {
+        font-size: 24px;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    #content {
+        width: 100%;
+        padding: 16px;
+        margin: 10px auto;
+        font-size: 14px;
+        line-height: 1.8;
+        word-break: break-word;
+    }
+
+    /* Banner */
+    .banner-img {
+        height: auto;
+        max-height: 220px;
+        object-fit: cover;
+    }
+
+    /* Project cards */
+    .project-card {
+        padding: 14px;
+        margin: 14px 0;
+    }
+
+    .project-card h4 {
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
+    .project-details {
+        font-size: 14px;
+        padding: 12px;
+    }
+
+    /* Education table scroll */
+    .education-table-wrapper {
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .education-table {
+        min-width: 650px;
+    }
+
+    .education-table th,
+    .education-table td {
+        font-size: 13px;
+        padding: 10px;
+        white-space: normal;
+    }
+
+    /* Contact */
+    .contact-card {
+        padding: 14px;
+        font-size: 14px;
+        line-height: 1.8;
+        word-break: break-word;
+    }
+
+    .contact-card a {
+        display: inline-block;
+        word-break: break-word;
+    }
+}
