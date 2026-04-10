@@ -1,25 +1,30 @@
+
+
 # 💼 ESWARAN R | Resume Portfolio Website
 
 A modern and professional resume portfolio website built using **HTML, CSS, JavaScript**.
 
 ## 🚀 Live Features
-- 🏠 Welcome landing page
-- 👨‍💻 About Me
-- 🛠 Technical & Non-Technical Skills
-- 📂 Projects
-- 🎓 Education
-- 🏆 Certifications
-- 📞 Contact Information
-- 📄 Resume Download Button
-- 📱 Fully Responsive Design
+
+* 🏠 Welcome landing page
+* 👨‍💻 About Me
+* 🛠 Technical & Non-Technical Skills
+* 📂 Projects
+* 🎓 Education
+* 🏆 Certifications
+* 📞 Contact Information
+* 📄 Resume Download Button
+* 📱 Fully Responsive Design
 
 ## 💻 Technologies Used
-- HTML5
-- CSS3
-- JavaScript
-- Font Awesome Icons
+
+* HTML5
+* CSS3
+* JavaScript
+* Font Awesome Icons
 
 ## 📂 Project Structure
+
 ```text
 index.html
 home.html
@@ -28,40 +33,53 @@ style.css
 script.js
 profile.jpg
 banner.webp
-images
+images/
 README.md
 ```
 
 ## 📸 Project Screenshots
 
 ### 🏠 Welcome Page
+
 ![Welcome Page](images/index.png)
 
 ### 🏡 Main Resume Home
+
 ![Home](images/home.png)
 
 ### 👨‍💻 About Section
+
 ![About](images/about.png)
 
 ### 🛠 Skills Section
+
 ![Skills](images/skills.png)
 
 ### 📂 Projects Section
+
 ![Projects](images/projects.png)
 
 ### 🎓 Education Section
+
 ![Education](images/education.png)
 
 ### 🏆 Certificates Section
+
 ![Certificates](images/certificates.png)
 
 ### 📞 Contact Section
+
 ![Contact](images/contact.png)
 
-
 ## 🌐 Deployment
-Deployed using **GitHub Pages**
+
+Deployed using **Netlify**
+
+## 🌐 Live Demo
+
+👉 [View Portfolio Website](https://eswaran-resume-website.netlify.app)
 
 ## 👨‍💻 Author
-**Eswaran R**  
+
+**Eswaran R**
 Full Stack Developer
