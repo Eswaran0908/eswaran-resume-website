@@ -192,55 +192,46 @@ function showContent(section) {
         </div>
     `;
 }
-    else if (section === "education") {
-        title.innerHTML = "🎓 Education";
-        content.innerHTML = `
-            <div class="education-table-wrapper">
-                <h3>📚 Academic Qualifications</h3>
+   else if (section === "education") {
+    title.innerHTML = "🎓 Education";
+    content.innerHTML = `
+        <div class="education-section">
+            <h3>📚 Academic Qualifications</h3>
 
-                <table class="education-table">
-                    <thead>
-                        <tr>
-                            <th>Qualification</th>
-                            <th>Institution / Board</th>
-                            <th>Year</th>
-                            <th>Percentage / GPA</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>Master in Full Stack Web Development with Java</td>
-                            <td>Itvedant Education Pvt Ltd, Chennai</td>
-                            <td>2025</td>
-                            <td>Completed</td>
-                        </tr>
+            <div class="education-cards">
 
-                        <tr>
-                            <td>Bachelor of Computer Applications (BCA)</td>
-                            <td>Periyar University, Salem</td>
-                            <td>2017</td>
-                            <td>81.67% / 8.167</td>
-                        </tr>
+                <div class="edu-card">
+                    <h4>🎓 Master in Full Stack Web Development with Java</h4>
+                    <p><b>Institution:</b> Itvedant Education Pvt Ltd, Chennai</p>
+                    <p><b>Year:</b> 2025</p>
+                    <p><b>Status:</b> Completed</p>
+                </div>
 
-                        <tr>
-                            <td>HSC (Bio-Maths)</td>
-                            <td>State Board TN</td>
-                            <td>2014</td>
-                            <td>66.75% / 6.675</td>
-                        </tr>
+                <div class="edu-card">
+                    <h4>🎓 Bachelor of Computer Applications (BCA)</h4>
+                    <p><b>Institution:</b> Periyar University, Salem</p>
+                    <p><b>Year:</b> 2017</p>
+                    <p><b>Percentage / GPA:</b> 81.67% / 8.167</p>
+                </div>
 
-                        <tr>
-                            <td>SSLC</td>
-                            <td>State Board TN</td>
-                            <td>2012</td>
-                            <td>76.6% / 7.6</td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="edu-card">
+                    <h4>🎓 HSC (Bio-Maths)</h4>
+                    <p><b>Board:</b> State Board TN</p>
+                    <p><b>Year:</b> 2014</p>
+                    <p><b>Percentage / GPA:</b> 66.75% / 6.675</p>
+                </div>
+
+                <div class="edu-card">
+                    <h4>🎓 SSLC</h4>
+                    <p><b>Board:</b> State Board TN</p>
+                    <p><b>Year:</b> 2012</p>
+                    <p><b>Percentage / GPA:</b> 76.6% / 7.6</p>
+                </div>
+
             </div>
-        `;
-    }
-
+        </div>
+    `;
+}
     else if (section === "certificate") {
         title.innerHTML = "🏆 Certifications";
         content.innerHTML = `
