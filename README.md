@@ -75,11 +75,17 @@ README.md
 
 Deployed using **Netlify**
 
+
 ## 🌐 Live Demo
 
 👉 [View Resume Website](https://eswaran-resume-website.netlify.app)
+
+## 💻 GitHub Repository
+
+👉 [View Source Code](https://github.com/Eswaran0908/eswaran-resume-website)
 
 ## 👨‍💻 Author
 
 **Eswaran R**
 Full Stack Developer
+
