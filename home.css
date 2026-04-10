@@ -1,3 +1,6 @@
+/* =========================
+   RESET & GLOBAL STYLES
+========================= */
 * {
     margin: 0;
     padding: 0;
@@ -11,13 +14,17 @@ body {
     overflow-x: hidden;
 }
 
-/* Main Layout */
+/* =========================
+   MAIN LAYOUT
+========================= */
 .main-container {
     display: flex;
     min-height: 100vh;
 }
 
-/* LEFT COLUMN */
+/* =========================
+   LEFT COLUMN
+========================= */
 .left-column {
     width: 32%;
     background: linear-gradient(180deg, #1e3a8a, #2563eb);
@@ -28,14 +35,12 @@ body {
     animation: slideLeft 1s ease;
 }
 
-/* IMAGE WRAPPER */
 .image-wrapper {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
 }
 
-/* PROFILE IMAGE */
 .profile-pic {
     width: 230px;
     height: 230px;
@@ -43,17 +48,15 @@ body {
     object-fit: cover;
     object-position: center top;
     border: 6px solid white;
-    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     animation: floatImage 3s infinite ease-in-out;
 }
 
-/* NAME */
 .left-column h1 {
     font-size: 2rem;
     margin: 15px 0 10px;
 }
 
-/* ROLE */
 .role {
     font-size: 1.1rem;
     letter-spacing: 1px;
@@ -61,7 +64,6 @@ body {
     color: #e0f2fe;
 }
 
-/* TYPING TEXT */
 #typing-text {
     min-height: 40px;
     font-size: 1rem;
@@ -69,7 +71,9 @@ body {
     color: #f8fafc;
 }
 
-/* BUTTONS */
+/* =========================
+   BUTTONS
+========================= */
 .download-btn,
 .back-btn {
     width: 100%;
@@ -86,13 +90,13 @@ body {
 .download-btn {
     background: white;
     color: #2563eb;
-    box-shadow: 0 0 15px rgba(255,255,255,0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
 .back-btn {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255, 255, 255, 0.15);
     color: white;
-    border: 1px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .download-btn:hover,
@@ -100,14 +104,18 @@ body {
     transform: scale(1.04);
 }
 
-/* RIGHT COLUMN */
+/* =========================
+   RIGHT COLUMN
+========================= */
 .right-column {
     width: 68%;
     padding: 30px;
     animation: fadeIn 1.2s ease;
 }
 
-/* NAVBAR */
+/* =========================
+   NAVBAR
+========================= */
 .navbar {
     display: flex;
     flex-wrap: wrap;
@@ -116,7 +124,7 @@ body {
     padding: 18px;
     background: white;
     border-radius: 18px;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
 }
 
 .nav-item {
@@ -135,13 +143,15 @@ body {
     transform: translateY(-2px);
 }
 
-/* CONTENT AREA */
+/* =========================
+   CONTENT AREA
+========================= */
 #content-area {
     background: white;
     padding: 30px;
     border-radius: 20px;
     min-height: 500px;
-    box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
 }
 
 #title {
@@ -156,7 +166,106 @@ body {
     color: #334155;
 }
 
-/* ANIMATIONS */
+/* =========================
+   BANNER
+========================= */
+.simple-banner {
+    margin-top: 20px;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    animation: fadeIn 1s ease;
+}
+
+.banner-img {
+    width: 100%;
+    height: 350px;
+    object-fit: fill;
+    display: block;
+}
+
+/* =========================
+   PROJECT SECTION
+========================= */
+.project-section {
+    animation: fadeIn 0.5s ease;
+}
+
+.project-section h3 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: #2563eb;
+    font-weight: 700;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #ffffff;
+    padding: 22px;
+    border-radius: 18px;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 22px rgba(37, 99, 235, 0.12);
+}
+
+.project-card.active {
+    border: 2px solid #2563eb;
+    background: #eff6ff;
+    box-shadow: 0 10px 24px rgba(37, 99, 235, 0.18);
+}
+
+.project-card h4 {
+    font-size: 1.15rem;
+    color: #1e293b;
+    margin-bottom: 8px;
+    font-weight: 700;
+}
+
+.project-date {
+    color: #64748b;
+    font-size: 0.9rem;
+    margin-bottom: 14px;
+    font-weight: 600;
+}
+
+.project-details {
+    margin-top: 14px;
+    padding-top: 12px;
+    border-top: 1px solid #e2e8f0;
+    line-height: 1.8;
+    color: #334155;
+    font-size: 0.96rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.project-details a {
+    color: #2563eb;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.project-details a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   ANIMATIONS
+========================= */
 @keyframes slideLeft {
     from {
         opacity: 0;
@@ -169,15 +278,9 @@ body {
 }
 
 @keyframes floatImage {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-10px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0px); }
 }
 
 @keyframes fadeIn {
@@ -191,7 +294,9 @@ body {
     }
 }
 
-/* RESPONSIVE */
+/* =========================
+   RESPONSIVE
+========================= */
 @media (max-width: 768px) {
     .main-container {
         flex-direction: column;
@@ -210,19 +315,12 @@ body {
         width: 180px;
         height: 180px;
     }
-}
 
-.simple-banner {
-    margin-top: 20px;
-    border-radius: 18px;
-    overflow: hidden;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
-    animation: fadeIn 1s ease;
-}
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
 
-.banner-img {
-    width: 100%;
-    height: 350px;
-    object-fit: fill;
-    display: block;
+    .project-card {
+        padding: 18px;
+    }
 }

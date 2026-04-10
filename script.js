@@ -118,61 +118,80 @@ function showContent(section) {
         `;
     }
 
-    else if (section === "projects") {
-        title.innerHTML = "📂 My Projects";
-        content.innerHTML = `
-            <div class="project-section">
-                <h3>🚀 Click the button below to view project details</h3>
+   else if (section === "projects") {
+    title.innerHTML = "📂 My Projects";
+    content.innerHTML = `
+        <div class="project-section">
+            <h3>🚀 Latest Projects (Date Wise)</h3>
 
-                <div class="project-card">
-                    <h4>📚 Online Book Store Application</h4>
-                    <button onclick="toggleProject('bookstore')">View Details</button>
-                    <div id="bookstore" class="project-details hidden">
-                        <p><b>Tools:</b> Java, Spring Boot, MySQL, HTML, CSS, Bootstrap, JavaScript</p>
-                        <p>Admin & User modules with add, edit, delete, search, pagination, cart & payment.</p>
+            <div class="project-grid">
+
+                <div class="project-card active" onclick="toggleProject('resume', this)">
+                    <h4>💼 ESWARAN Resume Website</h4>
+                    <p class="project-date">📅 10 Apr 2026</p>
+                    <div id="resume" class="project-details">
+                        <p><b>Tools:</b> HTML, CSS, JavaScript, Netlify</p>
+                        <p>Professional responsive resume portfolio website.</p>
+                        <p><b>Live Site:</b> 
+                        <a href="https://eswaran-resume-website.netlify.app" target="_blank">
+                        View Live Website
+                        </a></p>
                     </div>
                 </div>
 
-                <div class="project-card">
-                    <h4>🧾 Customer CRUD – Spring Boot</h4>
-                    <button onclick="toggleProject('crud')">View Details</button>
-                    <div id="crud" class="project-details hidden">
-                        <p><b>Tools:</b> Spring Boot, MySQL, Postman, Maven</p>
-                        <p>REST API for customer data with full CRUD operations.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <h4>🗄 Evergreen Studio – JDBC CRUD</h4>
-                    <button onclick="toggleProject('jdbc')">View Details</button>
-                    <div id="jdbc" class="project-details hidden">
-                        <p><b>Tools:</b> Java, JDBC, MySQL, Eclipse</p>
-                        <p>CRUD operations with real-time database updates.</p>
-                    </div>
-                </div>
-
-                <div class="project-card">
+                <div class="project-card" onclick="toggleProject('thirukkural', this)">
                     <h4>📜 Thirukkural Search Webpage</h4>
-                    <button onclick="toggleProject('thirukkural')">View Details</button>
+                    <p class="project-date">📅 31 Dec 2025</p>
                     <div id="thirukkural" class="project-details hidden">
                         <p><b>Tools:</b> HTML, CSS, Bootstrap, JavaScript</p>
                         <p>Responsive webpage to search and display Thirukkural couplets.</p>
-                        <p><b>Live Site:</b> site-tamil-ilakkiya.netlify.app</p>
+                        <p><b>Live Site:</b> 
+                        <a href="https://site-tamil-ilakkiya.netlify.app" target="_blank">
+                        View Live Website
+                        </a></p>
                     </div>
                 </div>
 
-                <div class="project-card">
+                <div class="project-card" onclick="toggleProject('bookstore', this)">
+                    <h4>📚 Online Book Store Application</h4>
+                    <p class="project-date">📅 21 Feb 2025</p>
+                    <div id="bookstore" class="project-details hidden">
+                        <p><b>Tools:</b> Java, Spring Boot, MySQL</p>
+                        <p>Admin & User modules with cart and payment.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleProject('crud', this)">
+                    <h4>🧾 Customer CRUD – Spring Boot</h4>
+                    <p class="project-date">📅 Jan 2025</p>
+                    <div id="crud" class="project-details hidden">
+                        <p><b>Tools:</b> Spring Boot, MySQL</p>
+                        <p>REST API CRUD operations.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleProject('jdbc', this)">
+                    <h4>🗄 Evergreen Studio – JDBC CRUD</h4>
+                    <p class="project-date">📅 Dec 2024</p>
+                    <div id="jdbc" class="project-details hidden">
+                        <p><b>Tools:</b> Java, JDBC, MySQL</p>
+                        <p>Real-time database CRUD operations.</p>
+                    </div>
+                </div>
+
+                <div class="project-card" onclick="toggleProject('agri', this)">
                     <h4>🌾 Agriculture Database System</h4>
-                    <button onclick="toggleProject('agri')">View Details</button>
+                    <p class="project-date">📅 Oct 2024</p>
                     <div id="agri" class="project-details hidden">
                         <p><b>Tools:</b> MySQL Workbench</p>
-                        <p>Database system to manage crop and farmer records.</p>
+                        <p>Crop and farmer management system.</p>
                     </div>
                 </div>
-            </div>
-        `;
-    }
 
+            </div>
+        </div>
+    `;
+}
     else if (section === "education") {
         title.innerHTML = "🎓 Education";
         content.innerHTML = `
