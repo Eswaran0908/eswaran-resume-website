@@ -483,3 +483,11 @@ body {
     line-height: 1.8;
     font-size: 14px;
 }
+.edu-card {
+    transition: 0.3s ease;
+}
+
+.edu-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 18px rgba(14, 74, 202, 0.929);
+}
