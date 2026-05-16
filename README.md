@@ -1,6 +1,6 @@
 
 
-# 💼 ESWARAN R | Resume Portfolio Website | April - May - 2026
+# 💼 ESWARAN R | Resume Portfolio Website | April - 2026
 
 A modern and professional resume portfolio website built using **HTML, CSS, JavaScript**.
 
